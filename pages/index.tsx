@@ -39,7 +39,7 @@ export default function HomePage() {
     }
 
     if (a === 0) {
-      setResult(b * -1);
+      showErrorSnackbar('This expression is not a first degree expression');
     } else {
       setResult((b * -1) / a);
     }
