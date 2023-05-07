@@ -126,7 +126,7 @@ export default function HomePage() {
             </Button>
           </Box>
 
-          {result ? (
+          {typeof result === 'number' ? (
             <Typography variant={'subtitle2'} fontSize={'h6.fontSize'}>
               Calculated value for x is:{' '}
               <Typography component={'span'} color={'error'} variant={'h6'}>
